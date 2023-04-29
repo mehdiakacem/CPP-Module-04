@@ -6,7 +6,7 @@
 /*   By: makacem <makacem@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 17:07:24 by makacem           #+#    #+#             */
-/*   Updated: 2023/04/29 14:52:53 by makacem          ###   ########.fr       */
+/*   Updated: 2023/04/29 15:58:37 by makacem          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int main()
     const Animal* j = new Dog();
     const Animal* i = new Cat();
 
-    int nbrof_animals = 54;
+    int nbrof_animals = 4;
     Animal* animals[nbrof_animals];
 
     for (int i = 0; i < nbrof_animals / 2; i++) {

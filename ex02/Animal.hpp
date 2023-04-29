@@ -6,7 +6,7 @@
 /*   By: makacem <makacem@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 14:11:19 by makacem           #+#    #+#             */
-/*   Updated: 2023/04/29 09:30:30 by makacem          ###   ########.fr       */
+/*   Updated: 2023/04/29 15:57:10 by makacem          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,8 @@ class Animal
         void        setType(std::string const type);
         std::string getType(void) const;
 
-        virtual void    makeSound(void) const;
+        virtual void    makeSound(void) const = 0;
 };
-
-
 
 
 

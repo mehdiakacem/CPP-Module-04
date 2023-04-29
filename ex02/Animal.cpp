@@ -6,16 +6,11 @@
 /*   By: makacem <makacem@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 16:59:02 by makacem           #+#    #+#             */
-/*   Updated: 2023/04/29 09:30:43 by makacem          ###   ########.fr       */
+/*   Updated: 2023/04/29 15:56:01 by makacem          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
-
-void    Animal::makeSound(void) const
-{
-    std::cout << "<<Animal sound>>" << std::endl;
-}
 
 std::string Animal::getType(void) const
 {
