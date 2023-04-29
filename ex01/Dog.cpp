@@ -6,7 +6,7 @@
 /*   By: makacem <makacem@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 17:03:24 by makacem           #+#    #+#             */
-/*   Updated: 2023/04/29 10:24:15 by makacem          ###   ########.fr       */
+/*   Updated: 2023/04/29 13:57:29 by makacem          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ void    Dog::makeSound(void) const
 
 Dog::Dog(void)
 {
+    brain = new Brain();
     std::cout << "Dog Default constructor called" << std::endl;
     setType("Dog");
 }
@@ -35,11 +36,14 @@ Dog  &Dog::operator=(const Dog &other)
     if (this != &other)
     {
         this->type = other.type;
+        this->brain = new Brain();
+        *(this->brain) = *(other.brain);
     }
     return *this;
 }
 
 Dog::~Dog(void)
 {
+    delete brain;
     std::cout << "Dog Destructor called" << std::endl;
 }
