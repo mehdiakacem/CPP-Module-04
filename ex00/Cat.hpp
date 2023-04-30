@@ -6,7 +6,7 @@
 /*   By: makacem <makacem@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 16:59:43 by makacem           #+#    #+#             */
-/*   Updated: 2023/04/29 09:31:27 by makacem          ###   ########.fr       */
+/*   Updated: 2023/04/30 08:10:21 by makacem          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ class Cat : public Animal
         Cat(void);
         Cat(Cat const &otherObject);
         Cat  &operator=(const Cat &other);
-        ~Cat(void);
-        void    makeSound(void) const;
+        virtual ~Cat(void);
+        virtual void    makeSound(void) const;
 };
 
 

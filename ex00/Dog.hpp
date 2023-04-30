@@ -6,7 +6,7 @@
 /*   By: makacem <makacem@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 17:00:14 by makacem           #+#    #+#             */
-/*   Updated: 2023/04/29 09:31:09 by makacem          ###   ########.fr       */
+/*   Updated: 2023/04/30 08:10:43 by makacem          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ class Dog : public Animal
         Dog(void);
         Dog(Dog const &otherObject);
         Dog  &operator=(const Dog &other);
-        ~Dog(void);
+        virtual ~Dog(void);
         
-        void    makeSound(void) const;
+        virtual void    makeSound(void) const;
 };
 
 

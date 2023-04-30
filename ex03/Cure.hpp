@@ -1,37 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*   Cure.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: makacem <makacem@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/28 16:59:43 by makacem           #+#    #+#             */
-/*   Updated: 2023/04/30 08:11:28 by makacem          ###   ########.fr       */
+/*   Created: 2023/04/29 17:53:51 by makacem           #+#    #+#             */
+/*   Updated: 2023/04/30 08:51:20 by makacem          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CAT_HPP
+#ifndef CURE_HPP
 
-# define CAT_HPP
+# define CURE_HPP
+
 # include <iostream>
-# include "Animal.hpp"
-# include "Brain.hpp"
+# include "AMateria.hpp"
 
-class Cat : public Animal
+class Cure : public AMateria
 {
-    private:
-        Brain *brain;
     public:
-        Cat(void);
-        Cat(Cat const &otherObject);
-        Cat  &operator=(const Cat &other);
-        virtual ~Cat(void);
-        virtual void    makeSound(void) const;
+        Cure(void);
+        Cure(Cure const &src);
+        Cure  &operator=(Cure const &rhs);
+        virtual ~Cure(void);
+
+        virtual AMateria* clone() const;
+        virtual void use(ICharacter& target);
 };
 
 
-
-
-
 #endif
-
